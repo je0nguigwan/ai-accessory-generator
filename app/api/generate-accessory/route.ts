@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
 
-const model = process.env.OPENAI_IMAGE_MODEL ?? "gpt-image-1";
+const model = process.env.OPENAI_IMAGE_MODEL ?? "dall-e-3";
 
 export async function POST(request: Request) {
   if (!process.env.OPENAI_API_KEY) {
